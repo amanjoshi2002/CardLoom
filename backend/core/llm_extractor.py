@@ -1,8 +1,11 @@
 import os
 from litellm import completion
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Set your Gemini API key
-os.environ["GEMINI_API_KEY"] = "AIzaSyDC9I8BmAVmBH3zK0cnWT61Sy-VWhtaxAI"
+os.environ["GEMINI_API_KEY"] = os.getenv("GEMINI_API_KEY")
 
 # # Call the Gemini model using the gemini/ prefix
 # response = completion(

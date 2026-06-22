@@ -4,6 +4,8 @@
 venv/
 .venv/
 
+cardloom.db
+
 # Python cache
 __pycache__/
 *.py[cod]
